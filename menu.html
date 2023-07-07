@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url("Pictures/1.png");
+            overflow-x: hidden;
+        }
+     .flex{
+     display: flex;
+     gap: var(--gap, 1rem);
+     }
+
+     .primary-header{ 
+        align-items: center;
+        justify-content: space-between;
+     }
+     .logo{
+        margin: 2rem;
+     }
+     .mobile-nav-toggle{
+        display: none;
+     }
+     .primary-navigation{
+        list-style: none;
+        margin: 0;
+        background: #222;
+        padding: 10px 3rem;
+
+     }
+     .primary-navigation a{
+        color: white;
+        text-decoration: none;
+     }
+     nav{
+        padding-inline-end: 1rem;
+     }
+     @media (max-width: 40rem){
+        .primary-navigation{
+            position: fixed;
+            inset: 0 0 0 50%;
+            flex-direction: column;
+            padding: min(25vh, 10rem) 2rem;
+            background-color: darkgreen;
+            /* background: hsl(0, 0, 100%/0.5); */
+            gap: 2rem;
+            transform: translateX(100%);
+            transition: transform 250ms ease-in-out;
+        }
+       .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        z-index: 1000;
+       }
+       .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+     }
+     }
+     
+    </style>
+</head>
+<body>
+    <header class="primary-header flex">
+        <div>
+            <h2 class="logo">Logo</h2>
+        </div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+        <nav>
+            <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testemonial</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        const primaryNav = document.querySelector(".primary-navigation");
+        const navToggle = document.querySelector(".mobile-nav-toggle");
+        navToggle.addEventListener('click', ()=>{
+          const visibality = primaryNav.getAttribute("data-visible");
+          
+          if(visibality === "false"){
+            primaryNav.setAttribute("data-visible",true);
+          }else{
+            primaryNav.setAttribute("data-visible", false);
+          }
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+
+:root{
+    /* LIGHT VERSION */
+--primary-color: #1F7AE0;/*(A vibrant blue for a fresh and modern look)*/
+--Secondary-Color: #F9A826;/*(A warm orange for a welcoming and energetic feel)*/
+--Accent-Color: #4CAF50;/*(A lively green to draw attention to important elements)*/
+--Background-Color: #fff;/*(Clean and bright white background) */
+--Text-Color:#333333;/*(Dark gray for legible text) */
+
+    /* DARK VERSION */
+--dark-Primary-Color:#7D3C98;/*(A rich purple for an elegant and sophisticated vibe)*/
+--dark-Secondary-Color: #FFC300 ;  /*(A vibrant yellow for a striking contrast) */
+--dark-Accent-Color: #E74C3C ; /*(A bold red to highlight important elements) */
+--dark-Background-Color:#212121 ; /*(Dark gray or black background) */
+--dark-Text-Color:#FFFFFF ; /*(White text for high contrast) */
+}
+.carousel-item{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+.container{
+    width: 50%;
+    position: absolute;
+    /* border: 5px white solid; */ 
+    left: 0;
+    right: 20%;
+    bottom: 7%;
+  }
+  .overlay-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+  .btn-container{
+    position: absolute;
+    z-index: 11;
+    left: 15%;
+    right: 0;
+    bottom: 32%;
+  }
+
+.btn-container a{
+   text-decoration: none;
+   color: white;
+   margin: 10px;
+   padding: 7px 30px;
+   border-radius: 3px;
+   text-align: center;
+}
+.rent-btn-color{
+    background-color: var(--Secondary-Color);
+}
+.buy-btn-color{
+    background-color: #00000041;
+    border: 2px solid var(--primary-color);
+}

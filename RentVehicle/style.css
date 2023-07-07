@@ -1,0 +1,62 @@
+
+:root{
+  /* LIGHT VERSION */
+--primary-color: #1F7AE0;/*(A vibrant blue for a fresh and modern look)*/
+--Secondary-Color: #F9A826;/*(A warm orange for a welcoming and energetic feel)*/
+--Accent-Color: #4CAF50;/*(A lively green to draw attention to important elements)*/
+--Background-Color: #fff;/*(Clean and bright white background) */
+--Text-Color:#333333;/*(Dark gray for legible text) */
+
+  /* DARK VERSION */
+--dark-Primary-Color:#7D3C98;/*(A rich purple for an elegant and sophisticated vibe)*/
+--dark-Secondary-Color: #FFC300 ;  /*(A vibrant yellow for a striking contrast) */
+--dark-Accent-Color: #E74C3C ; /*(A bold red to highlight important elements) */
+--dark-Background-Color:#212121 ; /*(Dark gray or black background) */
+--dark-Text-Color:#FFFFFF ; /*(White text for high contrast) */
+}
+body{
+  margin-inline: 3%;
+  margin-block: 0;
+}
+
+/* ////////////////// MENU ////////////// */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #1F7AE0; */
+  /* height: 4rem; */
+  border-bottom: 1px #bdbdbd solid;
+}
+header a{
+  text-decoration: none;
+  color: #333333;
+  /* width: 100px; */
+  padding: 18px 16px;
+  /* text-transform: uppercase; */
+  font-size: 16px;
+  /* font-weight: bold; */
+}
+
+.signIn-btn a{
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+.signIn-btn a:hover{
+  /* background-color: var(--primary-color); */
+  background-color: #1a5eac;
+  /* padding: 8px 20px;
+  border-radius: 30px; */
+}
+header ul a:hover{
+ /* color: #fff; */
+ background-color: #e4e4e4;
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  /* text-align: center; */
+}
