@@ -1,0 +1,293 @@
+:root{
+    /* LIGHT VERSION */
+--primary-color: #1F7AE0;/*(A vibrant blue for a fresh and modern look)*/
+--Secondary-Color: #e9950e;/*(A warm orange for a welcoming and energetic feel)*/
+--Accent-Color: #4CAF50;/*(A lively green to draw attention to important elements)*/
+--Background-Color: #fff;/*(Clean and bright white background) */
+--Text-Color:#333333;/*(Dark gray for legible text) */
+
+    /* DARK VERSION */
+--dark-Primary-Color:#7D3C98;/*(A rich purple for an elegant and sophisticated vibe)*/
+--dark-Secondary-Color: #FFC300 ;  /*(A vibrant yellow for a striking contrast) */
+--dark-Accent-Color: #E74C3C ; /*(A bold red to highlight important elements) */
+--dark-Background-Color:#212121 ; /*(Dark gray or black background) */
+--dark-Text-Color:#FFFFFF ; /*(White text for high contrast) */
+}
+body{
+    margin-inline: 3%;
+    margin-block: 0;
+}
+/* ////////////////// MENU ////////////// */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #bdbdbd solid;
+}
+
+
+header a{
+    text-decoration: none;
+    color: #333333;
+    padding: 18px 16px;
+    font-size: 16px;
+}
+
+.signIn-btn a{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+.signIn-btn a:hover{
+    background-color: #1a5eac;
+}
+header ul a:hover{
+   background-color: #e4e4e4;
+   padding: 17px 16px;
+   border-bottom: 1px #bdbdbd solid;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+/* ////////////// END MENU //////////////// */
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    height: 100dvh;
+    /* border: 1px solid #1a5eac; */
+    place-items: center;
+}
+.dashboard-content{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* align-items: left; */
+    width: 70%;
+    border: 1px solid peru;
+}
+.dashboard-content-img{
+    border: 1px solid peru;
+}
+/* .dashboard-content{
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+} */
+/* .dashboard-content-text{
+    width: 35%;
+    padding: 10px;
+} */
+.dashboard-content-img img{
+    width: 35rem;
+    /* width: min(25vh, 25rem) 35rem; */
+    /* visibility: hidden; */
+}
+.dashboard span{
+    color: var(--Secondary-Color);
+}
+.dashboard-content h1{
+    font-size: 2.75rem;
+    font-weight: 1000;
+    margin: 0;
+    padding: 0;
+}
+.dashboard-content p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.dashboard-content a{
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--Secondary-Color);
+}
+.margin{
+    margin-bottom: 5%;
+}
+
+/* /////////////// DISCOVER SECTION /////////// */
+.discover-favorite-car{
+    text-align: center;
+    margin-block-end: 15%;
+}
+.discovery-section-title{
+    padding:0 0 5% 0;
+}
+.discover-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid gray;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left; */
+}
+.discovery-items-content{
+    width: 20rem;
+}
+.discovery-items-content a{
+    text-decoration: none;
+    color: var(--Secondary-Color);
+    padding-block: 10px;
+    border-bottom: 1px var(--Secondary-Color) solid;
+}
+.sedan-img, .suv-img, .electric-img{
+    background-position: center;
+    background-size: cover;
+    width: 28rem;
+    height: 15rem;
+}
+.sedan-img{
+    background-image: url("../Pictures/discover the collection/genesis.jpg");
+}
+.suv-img{
+    background-image: url("../Pictures/discover the collection/cadilac.jpg");
+}
+.electric-img{
+    background-image: url("../Pictures/discover the collection/tesla.jpg");
+}
+.discover-favorite-car img{
+    width: 25rem;
+}
+
+/* //////////// CARDS SECTION /////////// */
+.card{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   gap: 1rem;
+}
+.first-card{
+border: 1px black solid;
+}
+.first-card img , .second-card img{
+    width: 17rem;
+}
+/* ///////////////// CARDS //////////// */
+.type-milage{
+    display: flex;
+    align-items: center;
+}
+.price-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px #bdbdbd solid;
+    margin-block: 15px;
+    padding-top: 10px;
+}
+/* .price-details  */
+.price-details a{
+    text-decoration: none;
+    color: var(--Text-Color);
+    padding: 5px;
+    border-bottom: 1px var(--Secondary-Color) solid;
+    margin-right: 10px;
+}
+.price-details a:hover{
+    border-bottom: 1px var(--primary-color) solid;
+}
+.price-color{
+    color: var(--Secondary-Color);
+}
+.title>*{
+    margin: 0;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+.type-milage>* , .price-details>*{
+    margin: 0;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+/* //////////FOOTER SECTION //////////// */
+footer{
+    width: 100%;
+    height: 10rem;
+    position: relative;
+}
+.footer-section{
+width: 100%;
+background-color: #dddddd;
+text-align: center;
+padding: 1rem;
+position: absolute;
+bottom: 0;
+}
+.footer-section p{
+    font-size: 14px;
+}
+
+.mobile-nav-toggle{
+    width: 3rem;
+    height: 3rem;
+    background-image: url(/Pictures/BMW_background.jpg);
+    background-repeat: no-repeat;
+    display: none;
+}
+/* //////////////LAST TRY/////////// */
+
+/* //////////////////////////MEDIA QUERY////////////// */
+@media (max-width: 948px){
+    .primary-navigation{
+        position: fixed;
+        inset: 0 0 0 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: min(25vh, 20rem) 5rem; */
+        background-color: #cbcbcb;
+        /* background: hsl(0, 0, 100%/0.5); */
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+    }
+    .primary-navigation li{
+        height: 5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .primary-navigation a{
+        font-size: 1.25rem;
+    }
+    .primary-navigation a:hover{
+        color: var(--primary-color);
+    }
+   .mobile-nav-toggle{
+    display: block;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    /* background-color: #1a5eac; */
+    /* background-image: url(/SVGicone/close_32px.png); */
+    background-repeat: no-repeat;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1000;
+   }
+   .primary-navigation[data-visible="true"]{
+    transform: translateX(0%);
+ }
+ .primary-navigation ul{
+    margin: 0;
+ }
+ ul{
+    margin-block: 0;
+}
+
+}

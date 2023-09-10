@@ -25,7 +25,7 @@
 .container{
     width: 50%;
     position: absolute;
-    /* border: 5px white solid; */ 
+    /* border: 5px white solid;  */
     left: 0;
     right: 20%;
     bottom: 7%;
@@ -41,7 +41,7 @@
     opacity: 0.5;
   }
   .btn-container{
-    position: absolute;
+    position: fixed;
     z-index: 11;
     left: 15%;
     right: 0;
@@ -63,3 +63,226 @@
     background-color: #00000041;
     border: 2px solid var(--primary-color);
 }
+
+/* ////////// MEDIA QUERY ////////// */
+
+@media(max-width: 1280px){
+  .container{
+    width: 60%;
+    left: 10%;
+  }
+}
+@media (max-width: 800px){
+  .container{
+    width: 80%;
+    left: 15%;
+  }
+}
+
+
+ /* @media (max-width: 1983px){
+  .btn-container{
+    bottom: 30%;
+  }
+
+.btn-container a{
+   font-size: 1.75rem;
+   padding: 1.75rem 4.25rem;
+}
+.carousel-inner h1{
+font-size: 4rem;
+}
+.carousel-inner p{
+ font-size: 1.75rem;
+}
+.carousel-inner a{
+ font-size: 2rem;
+}
+
+} */
+
+/* @media (max-width: 960px){
+  .btn-container{
+    bottom: 29%;
+    left: 5.75rem;
+  }
+
+.btn-container a{
+   font-size: 14px;
+   padding: 12px 2rem; 
+}
+  .carousel-inner h1{
+    font-size: 1.75rem;
+   }
+   .carousel-inner p{
+     font-size: 0.90rem;
+   }
+   .carousel-inner a{
+     font-size: 1rem;
+   }
+   .container{
+    width: 70%;
+    left: 5.75rem;
+  }
+}
+
+@media (max-width: 360px){
+  .btn-container{
+    bottom: 33%;
+    left: 10px;
+  }
+
+  .btn-container a{
+   font-size: 12px;
+   padding: 10px 1.75rem; 
+  }
+  .container{
+    width: 100%;
+    left: 10px;
+  }
+  .carousel-inner p{
+    font-size: 0.80rem;
+    margin-bottom: 5px;
+  }
+  .carousel-inner h1{
+    font-size: 1.50rem;
+   }
+  .carousel-inner a{
+    font-size: 1rem;
+  }
+}  */
+
+/* @media (max-width: 2500px){
+
+  .btn-container{
+    bottom: 32%;
+  }
+
+.btn-container a{
+   font-size: 1.75rem;
+   padding: 1.75rem 4.25rem;
+   
+}
+.carousel-inner h1{
+ font-size: 4rem;
+}
+.carousel-inner p{
+  font-size: 1.75rem;
+}
+.carousel-inner a{
+  font-size: 2rem;
+}
+} */
+
+/* @media(max-width: 2300px){
+.btn-container a{
+   font-size: 1.25rem;
+   padding: 1.25rem 3rem;
+   
+}
+.carousel-inner h1{
+ font-size: 3.75rem;
+}
+.carousel-inner p{
+  font-size: 1.50rem;
+}
+.carousel-inner a{
+  font-size: 1.75rem;
+}
+}
+
+@media(max-width: 1900px){
+  .btn-container{
+    bottom: 27%;
+  }
+
+  .btn-container a{
+    font-size: 1.25rem;
+    padding: 1rem 2.75rem;
+    
+ }
+ .carousel-inner h1{
+  font-size: 3rem;
+ }
+ .carousel-inner p{
+   font-size: 1rem;
+ }
+ .carousel-inner a{
+   font-size: 1.25rem;
+ }
+}
+
+@media (max-width: 1700px){
+  .btn-container{
+    bottom: 28%;
+  }
+
+  .btn-container a{
+    font-size: 1.25rem;
+    padding: 1rem 2.50rem;
+    
+ }
+}
+
+@media (max-width: 1500px){
+  .btn-container{
+    bottom: 30%;
+  }
+
+  .btn-container a{
+    font-size: 1rem;
+    padding: 1rem 2.25rem;
+    
+ }
+ .carousel-inner h1{
+  font-size: 2.75rem;
+ }
+}
+
+@media (max-width: 1400px){
+  .btn-container a{
+    font-size: 1rem;
+    padding: 0.75rem 2.25rem;
+    
+ }
+}
+
+@media (max-width: 1300px){
+  .btn-container{
+    bottom: 30%;
+  }
+
+  .btn-container a{
+    font-size: 1rem;
+    padding: 0.75rem 2.25rem;
+ }
+ .carousel-inner h1{
+  font-size: 2rem;
+ }
+}
+
+@media (max-width: 1100px){
+  .btn-container a{
+    font-size: 0.80rem;
+    padding: 12px 1.75rem;
+ }
+ .btn-container{
+  bottom: 32%;
+}
+}
+@media (max-width: 1000px){
+  .carousel-inner h1{
+    font-size: 1.85rem;
+    margin: 0;
+   }
+  .btn-container{
+    bottom: 33%;
+  }
+  .container a{
+    font-size: 1.15rem;
+  }
+  .container{
+    width: 60%;
+  }
+} */
+

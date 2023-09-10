@@ -2,236 +2,224 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <section id="Home" class="home container link">
+                <header>
+                    <div class="logo">
+                        <a href="#">Logo</a>
+                    </div>
+                <nav>
+                    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span></button>
 
-    <header>
-        <div class="logo">
-            <a href="#">Logo</a>
-        </div>
-    <nav>
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span></button>
-        <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Vehicale</a></li>
-            <li><a href="#">Testamonial</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="signIn-btn">
-        <a href="#">Sign In</a>
-    </div>
- </header>
-
-    <section class="body">
-        <div class="body-content">
-            <div class="body-content-text">
+                    <ul data-visible="false" id="primary-navigation" class="primary-navigation">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Discover">Discovery</a></li>
+                        <li><a href="#Cards">Vehicale</a></li>
+                        <li><a href="#Footer">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="signIn-btn">
+                    <a href="#">Sign In</a>
+                </div> -->
+             </header>
+            <div class="home-content">
+             <div class="home-content-text">
                 <p class="first-header">Plan your futur ride now .</p>
                 <h1>Save <span>big</span> money with us .</h1>
-                <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe rerum optio maiores id, nam dignissimos sapiente .</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe rerum optio maiores id, nam dignissimos sapiente .</p>
                 <a href="#">See more</a>
             </div>
-            <div class="body-content-img">
+
+        <div class="home-content-img">
                 <img src="../Pictures/Bmw_none_background.png" alt="BMW-Car">
             </div>
         </div>
-    </section>
-    <section class="discover-favorite-car">
-        <h1 class="discovery-section-title">DISCOVER THE COLECTION</h1>
-         
-        <div class="discover-content">
-        <div class="sedan">
-            <div class="sedan-img"></div>
-            <div class="discovery-items-content">
-                <h1>SEDANS & COUPE</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde labore repudiandae, facere repellat quo fuga nostrum .</p>
-                <a href="#">GO INSIDE THE ALL NEW</a>
+        </section>
+        <!-- //////////////DISCOVERY SECTION ///////////// -->
+        <section id="Discover" class="discover container link">
+            <div class="title-discovery">
+                <h1 class="discovery-section-title">DISCOVER THE CAR COLECTION</h1>
             </div>
-        </div>
 
-        <div class="suv">
-            <div class="suv-img"></div>
-            <div class="discovery-items-content">
-                <h1>SUVS</h1>
-                <p>iste earum numquam, eos doloribus delectus tenetur voluptatem corrupti sed hic! Itaque, debitis suscipit .</p>
-                <a href="#">EXPERIENCE THE SUVs</a>
+            <div class="discover-content">
+            <div class="sedan">
+                <div class="sedan-img"></div>
+                <div class="discovery-items-content">
+                    <h1>SEDANS & COUPE</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde labore repudiandae, facere repellat quo fuga nostrum .</p>
+                    <a href="#">GO INSIDE THE ALL NEW</a>
+                </div>
+            </div>
+    
+            <div class="suv">
+                <div class="suv-img"></div>
+                <div class="discovery-items-content">
+                    <h1>SUVS</h1>
+                    <p>iste earum numquam, eos doloribus delectus tenetur voluptatem corrupti sed hic! Itaque, debitis suscipit .</p>
+                    <a href="#">EXPERIENCE THE SUVs</a>
+                </div>
+                
+            </div>
+    
+            <div class="electric">
+                <div class="electric-img"></div>
+                <div class="discovery-items-content">
+                    <h1>ELECTRIC VEHICLES</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde labore repudiandae, facere repellat quo fuga nostrum .</p>
+                <a href="#">DISCOVER THE ELECTRIFIED</a>
+                </div>
             </div>
             
         </div>
+        </section>
 
-        <div class="electric">
-            <div class="electric-img"></div>
-            <div class="discovery-items-content">
-                <h1>ELECTRIC VEHICLES</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde labore repudiandae, facere repellat quo fuga nostrum .</p>
-            <a href="#">DISCOVER THE ELECTRIFIED</a>
+        <section id="Cards" class="cards-container container link">
+            <div class="card">
+                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
+                <div class="title">
+                    <h3>2023 BMW brand new</h3>
+                    <p>4D Sedan</p>
+                </div>
+                <div class="type-milage">
+                    <p>Manual</p>
+                    <p>35,000KM</p>
+                    <p>Gasoline</p>
+                </div>
+                <div class="price-details">
+                    <h3 class="price-color">60,000</h3>
+                    <a href="#">View Details</a>
+                </div>
             </div>
-        </div>
-        
+
+            <div class="card">
+                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
+                <div class="title">
+                    <h3>2023 BMW brand new</h3>
+                    <p>4D Sedan</p>
+                </div>
+                <div class="type-milage">
+                    <p>Manual</p>
+                    <p>35,000KM</p>
+                    <p>Gasoline</p>
+                </div>
+                <div class="price-details">
+                    <h3 class="price-color">60,000</h3>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
+                <div class="title">
+                    <h3>2023 BMW brand new</h3>
+                    <p>4D Sedan</p>
+                </div>
+                <div class="type-milage">
+                    <p>Manual</p>
+                    <p>35,000KM</p>
+                    <p>Gasoline</p>
+                </div>
+                <div class="price-details">
+                    <h3 class="price-color">60,000</h3>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
+                <div class="title">
+                    <h3>2023 BMW brand new</h3>
+                    <p>4D Sedan</p>
+                </div>
+                <div class="type-milage">
+                    <p>Manual</p>
+                    <p>35,000KM</p>
+                    <p>Gasoline</p>
+                </div>
+                <div class="price-details">
+                    <h3 class="price-color">60,000</h3>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
+                <div class="title">
+                    <h3>2023 BMW brand new</h3>
+                    <p>4D Sedan</p>
+                </div>
+                <div class="type-milage">
+                    <p>Manual</p>
+                    <p>35,000KM</p>
+                    <p>Gasoline</p>
+                </div>
+                <div class="price-details">
+                    <h3 class="price-color">60,000</h3>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
+                <div class="title">
+                    <h3>2023 BMW brand new</h3>
+                    <p>4D Sedan</p>
+                </div>
+                <div class="type-milage">
+                    <p>Manual</p>
+                    <p>35,000KM</p>
+                    <p>Gasoline</p>
+                </div>
+                <div class="price-details">
+                    <h3 class="price-color">60,000</h3>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
+                <div class="title">
+                    <h3>2023 BMW brand new</h3>
+                    <p>4D Sedan</p>
+                </div>
+                <div class="type-milage">
+                    <p>Manual</p>
+                    <p>35,000KM</p>
+                    <p>Gasoline</p>
+                </div>
+                <div class="price-details">
+                    <h3 class="price-color">60,000</h3>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
+                <div class="title">
+                    <h3>2023 BMW brand new</h3>
+                    <p>4D Sedan</p>
+                </div>
+                <div class="type-milage">
+                    <p>Manual</p>
+                    <p>35,000KM</p>
+                    <p>Gasoline</p>
+                </div>
+                <div class="price-details">
+                    <h3 class="price-color">60,000</h3>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+        </section>
+        <section id="Footer" class="footer link">
+            <p>Copyright@ 2023 Feroz Khairy</p>
+        </section>
     </div>
-
-    </section>
-
-    <section class="card">
-        <div class="frist-row">
-            <div class="first-card">
-                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
-                <div class="title">
-                    <h3>2023 BMW brand new</h3>
-                    <p>4D Sedan</p>
-                </div>
-                <div class="type-milage">
-                    <p>Manual</p>
-                    <p>35,000KM</p>
-                    <p>Gasoline</p>
-                </div>
-                <div class="price-details">
-                    <h3 class="price-color">60,000</h3>
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-            <div class="first-card">
-                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
-                <div class="title">
-                    <h3>2023 BMW brand new</h3>
-                    <p>4D Sedan</p>
-                </div>
-                <div class="type-milage">
-                    <p>Manual</p>
-                    <p>35,000KM</p>
-                    <p>Gasoline</p>
-                </div>
-                <div class="price-details">
-                    <h3 class="price-color">60,000</h3>
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-            <div class="first-card">
-                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
-                <div class="title">
-                    <h3>2023 BMW brand new</h3>
-                    <p>4D Sedan</p>
-                </div>
-                <div class="type-milage">
-                    <p>Manual</p>
-                    <p>35,000KM</p>
-                    <p>Gasoline</p>
-                </div>
-                <div class="price-details">
-                    <h3 class="price-color">60,000</h3>
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-            <div class="first-card">
-                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
-                <div class="title">
-                    <h3>2023 BMW brand new</h3>
-                    <p>4D Sedan</p>
-                </div>
-                <div class="type-milage">
-                    <p>Manual</p>
-                    <p>35,000KM</p>
-                    <p>Gasoline</p>
-                </div>
-                <div class="price-details">
-                    <h3 class="price-color">60,000</h3>
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="second-row">
-            <div class="first-card">
-                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
-                <div class="title">
-                    <h3>2023 BMW brand new</h3>
-                    <p>4D Sedan</p>
-                </div>
-                <div class="type-milage">
-                    <p>Manual</p>
-                    <p>35,000KM</p>
-                    <p>Gasoline</p>
-                </div>
-                <div class="price-details">
-                    <h3 class="price-color">60,000</h3>
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-            <div class="first-card">
-                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
-                <div class="title">
-                    <h3>2023 BMW brand new</h3>
-                    <p>4D Sedan</p>
-                </div>
-                <div class="type-milage">
-                    <p>Manual</p>
-                    <p>35,000KM</p>
-                    <p>Gasoline</p>
-                </div>
-                <div class="price-details">
-                    <h3 class="price-color">60,000</h3>
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-            <div class="first-card">
-                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
-                <div class="title">
-                    <h3>2023 BMW brand new</h3>
-                    <p>4D Sedan</p>
-                </div>
-                <div class="type-milage">
-                    <p>Manual</p>
-                    <p>35,000KM</p>
-                    <p>Gasoline</p>
-                </div>
-                <div class="price-details">
-                    <h3 class="price-color">60,000</h3>
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-            <div class="first-card">
-                <img src="../Pictures/Bmw_none_background.png" alt="card-img-one">
-                <div class="title">
-                    <h3>2023 BMW brand new</h3>
-                    <p>4D Sedan</p>
-                </div>
-                <div class="type-milage">
-                    <p>Manual</p>
-                    <p>35,000KM</p>
-                    <p>Gasoline</p>
-                </div>
-                <div class="price-details">
-                    <h3 class="price-color">60,000</h3>
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-        </div>
-    </section>
-     <footer>
-        <div class="footer-section">
-            <p>THIS WEBSITE IS A REGISTERED TRADEMARK OF MOTOR VEHICALE AMERICA. ALL RIGHTS RESERVED © 2023 FEROZKHAIRY</p>
-        </div>
-     </footer>
-
-
-     <script>
-        const primaryNav = document.querySelector(".primary-navigation");
-        const navToggle = document.querySelector(".mobile-nav-toggle");
-        navToggle.addEventListener('click', ()=>{
-          const visibality = primaryNav.getAttribute("data-visible");
-          
-          if(visibality === "false"){
-            primaryNav.setAttribute("data-visible",true);
-          }else{
-            primaryNav.setAttribute("data-visible", false);
-          }
-
-        })
-    </script>
+    
+    <script src="main.js"></script>
 </body>
 </html>

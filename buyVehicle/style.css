@@ -3,6 +3,7 @@
 --primary-color: #1F7AE0;/*(A vibrant blue for a fresh and modern look)*/
 --Secondary-Color: #e9950e;/*(A warm orange for a welcoming and energetic feel)*/
 --Accent-Color: #4CAF50;/*(A lively green to draw attention to important elements)*/
+--Accent-dark-Color: #07930c;
 --Background-Color: #fff;/*(Clean and bright white background) */
 --Text-Color:#333333;/*(Dark gray for legible text) */
 
@@ -13,99 +14,137 @@
 --dark-Background-Color:#212121 ; /*(Dark gray or black background) */
 --dark-Text-Color:#FFFFFF ; /*(White text for high contrast) */
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     margin-inline: 3%;
-    margin-block: 0;
 }
+.container{
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+}
+
 /* ////////////////// MENU ////////////// */
 header{
+    position: fixed;
     display: flex;
+    left: 0;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px #bdbdbd solid;
+    /* height: 3.25rem; */
+    transition: 0.4s;
+    padding: 20px 2.25rem;
 }
 
 
 header a{
+    position: relative;
     text-decoration: none;
     color: #333333;
-    padding: 18px 16px;
+    padding-inline: 18px;
     font-size: 16px;
 }
 
-.signIn-btn a{
+/* .signIn-btn a{
     background-color: var(--primary-color);
     color: #fff;
     padding: 8px 20px;
     border-radius: 30px;
-}
-.signIn-btn a:hover{
+} */
+/* .signIn-btn a:hover{
     background-color: #1a5eac;
-}
+} */
 header ul a:hover{
    background-color: #e4e4e4;
-   padding: 17px 16px;
-   border-bottom: 1px #bdbdbd solid;
+   padding: 20px 18px;
+   /* border-bottom: 1px #bdbdbd solid; */
 }
-
+nav{
+    position: relative;
+}
 nav ul{
+    position: relative;
     list-style-type: none;
     display: flex;
 }
+header.stiky{
+  padding: 25px 3.25rem;
+  background-color: #e4e4e4;
+}
 
-/* ////////////// END MENU //////////////// */
-.body-content{
-    height: 90vh;
-    height: 90dvh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap-reverse;
+/* //////////// home content //////// */
+.home-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.body-content-text{
-    width: 35%;
-    padding: 10px;
+.home-content-text{
+    width: 80%;
+    margin: 30% auto;
 }
-.body-content-img img{
-    width: 35rem;
-    /* visibility: hidden; */
+.home-content-text h1{
+   font-size: 3rem;
+   font-weight: bolder; 
+   margin-block: 1rem
 }
-.body span{
+.home-content-text span{
     color: var(--Secondary-Color);
 }
-.body-content-text h1{
-    font-size: 2.75rem;
-    font-weight: 1000;
-    margin: 0;
-    padding: 0;
+.home-content-text p{
+    margin-block-end: 1.75rem;
 }
-.body-content-text p{
-    font-size: 1rem;
-    font-weight: 500;
-}
-.body-content-text a{
+.home-content-text a{
     font-size: 1rem;
     text-decoration: none;
     padding: 10px 20px;
     color: #fff;
     background-color: var(--Secondary-Color);
 }
-.margin{
-    margin-bottom: 5%;
+.home-content-img{
+    margin: 20% auto;
 }
 
+/* /////// BUTTON ////// */
+.mobile-nav-toggle{
+    position: absolute;
+    z-index: 10000;
+    width: 1.25rem;
+    aspect-ratio: 1;
+    background-image: url(../icone/close_FILL0_wght400_GRAD0_opsz48.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    display: none;
+    /* background-size: cover; */
+}
+
+/* ////////////// END MENU //////////////// */
+
 /* /////////////// DISCOVER SECTION /////////// */
-.discover-favorite-car{
-    text-align: center;
+.discover{
+    padding-block: 10%;
+}
+.title-discovery{
+width: 100%;
+text-align: center;
 }
 .discovery-section-title{
-    padding:0 0 10% 0;
+    padding:0 0 5% 0;
 }
 .discover-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2.50rem;
+    /* border: 1px solid gray; */
+    /* display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    text-align: left;
+    text-align: left; */
 }
 .discovery-items-content{
     width: 20rem;
@@ -134,131 +173,284 @@ nav ul{
 .discover-favorite-car img{
     width: 25rem;
 }
-
-/* //////////// CARDS SECTION /////////// */
-.card{
-    width: 100%;
+.discovery-items-content p{
+    padding-block: 1rem;
 }
-.frist-row, .second-row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-block: 1rem;
-}
-.first-card{
-border: 1px black solid;
-}
-.first-card img , .second-card img{
-    width: 17rem;
-}
-/* ///////////////// CARDS //////////// */
-.type-milage{
-    display: flex;
-    align-items: center;
-}
-.price-details{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px #bdbdbd solid;
-    margin-block: 15px;
-    padding-top: 10px;
-}
-/* .price-details  */
-.price-details a{
-    text-decoration: none;
-    color: var(--Text-Color);
-    padding: 5px;
-    border-bottom: 1px var(--Secondary-Color) solid;
-    margin-right: 10px;
-}
-.price-details a:hover{
-    border-bottom: 1px var(--primary-color) solid;
-}
-.price-color{
-    color: var(--Secondary-Color);
-}
-.title>*{
-    margin: 0;
-    padding-inline: 10px;
-    padding-block: 5px;
-}
-.type-milage>* , .price-details>*{
-    margin: 0;
-    padding-inline: 10px;
-    padding-block: 5px;
+.discovery-items-content h1{
+ padding-top: 1rem;
 }
 
-/* //////////FOOTER SECTION //////////// */
-footer{
-    width: 100%;
-    height: 10rem;
-    position: relative;
-}
-.footer-section{
-width: 100%;
-background-color: #dddddd;
-text-align: center;
-padding: 1rem;
-position: absolute;
-bottom: 0;
-}
-.footer-section p{
-    font-size: 14px;
-}
 
-.mobile-nav-toggle{
-    width: 3rem;
-    height: 3rem;
-    background-image: url(/Pictures/BMW_background.jpg);
-    background-repeat: no-repeat;
-    display: none;
+/* ////////////////// CARDS SECTION //////////// */
+.cards-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
 }
-@media (max-width: 948px){
-    .primary-navigation{
-        position: fixed;
-        inset: 0 0 0 0;
-        flex-direction: column;
-        justify-content: center;
+    .card{
+        border: 1px black solid;
+        width: 20rem;
+    }
+    .card img{
+        width: 16rem;
+        margin-left: 10%;
+    }
+    .type-milage{
+        display: flex;
         align-items: center;
-        /* padding: min(25vh, 20rem) 5rem; */
-        background-color: #cbcbcb;
-        /* background: hsl(0, 0, 100%/0.5); */
-        transform: translateX(100%);
-        transition: transform 250ms ease-in-out;
     }
-    .primary-navigation li{
-        height: 5rem;
+    .price-details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px #bdbdbd solid;
+        padding: 1.25rem;
+        /* margin-block: 15px; */
+        /* padding-top: 10px; */
+    }
+    /* .price-details  */
+    .price-details a{
+        text-decoration: none;
+        color: var(--Text-Color);
+        padding: 5px;
+        border-bottom: 1px #979595 solid;
+        margin-right: 10px;
+    }
+    .price-details a:hover{
+        color: var(--primary-color);
+        border-bottom: 1px var(--primary-color) solid;
+    }
+    .price-color{
+        color: var(--Accent-dark-Color);
+    }
+    .title>* ,.type-milage>*{
+        margin-left: 1.25rem;
+        padding-block: 5px;
+    }
+ 
+/* //////////// END CARDS SECTION /////////// */
+.footer{
+    margin-top: 1rem;
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ////////////////// MEDIA QUERY //////////// */
+
+@media (max-width: 1470px){
+    .discover-content{
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        
+    }
+    .container{
         width: 100%;
-        text-align: center;
+        height: auto;
+        
     }
-    .primary-navigation a{
+}
+@media (max-width: 1420px){
+    .cards-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
+@media(max-width: 1080px){
+    .home-content-img img{
+        width: 28rem;
+    }
+   .home-content-text{
+    width: 85%;
+   }
+   .home-content-text h1{
+    font-size: 2.25rem;
+    font-weight: bold;
+    
+   }
+   .home-content-text p{
+    margin-block-end: 1.25rem;
+   
+   }
+}
+
+/* ///////////media query only for cards////// */
+@media(max-width: 1060px){
+    .cards-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 980px){
+    .discover-content{
+        grid-template-columns: auto;
+    }
+    .discovery-items-content p{
+        padding-block: 0.75rem;
+        
+    }
+    .discovery-items-content h1{
+     padding-top: 0.75;
+     font-size: 1.25rem;
+    }
+    /* .discovery-section-title{
+        font-size: 1.25rem;
+    } */
+
+}
+
+/* //////////////Home Media Query//////// */
+@media(max-width:805px){
+   .home-content{
+    grid-template-columns: auto;
+    
+    
+   }
+   .home-content-text{
+    grid-row: 2 / 3;
+    height: 50vh;
+    width: 90%;
+    padding: 0 0 0 13%;
+    margin: 0;
+   }
+   .home-content-img{
+     grid-row: 1/ 2;
+     height: 50vh;
+     width: 100%;
+     padding: 5% 0 0 0;
+     margin: 0;
+     text-align: center;
+     /* background-color: #07930c; */
+   }
+
+}
+
+/* /////////// CARDS MEDIA QUERY ////////// */
+@media(max-width: 705px){
+    .cards-container{
+        grid-template-columns: auto;
+    }
+}
+@media(max-width: 520px){
+    .home-content-img img{
+        width: 25rem;
+        
+    }
+    .home-content-img{
+        padding: 10% 0 0 0;
+    }
+    .home-content-text h1{
+       margin-block: 5px;
+       font-size: 2rem;
+    }
+    .home-content-text p:nth-child(1){
+        margin: 0;
+    }
+    .home-content-text p:nth-child(2){
+        margin:0 0 0 2rem;
+    }
+    /* /////////// Discovery Section /////////// */
+    .sedan-img, .suv-img, .electric-img{
+        width: 25rem;
+        height: 12rem;
+    }
+   
+}
+
+@media(max-width: 480px){
+    .home-content-img{
+        height: auto;
+    }
+    .home-content-text{
+        height: auto;
+        margin-block-end: 5rem;
+    }
+    .home-content-img img{
+        width: 22rem;
+        margin-top: 2.25rem;
+    }
+
+
+    /* //////////// */
+
+    /* .discovery-items-content p{
+        padding-block: 0.25rem;
+    }
+    .discovery-items-content h1{
+     padding-top: 0.75;
+     font-size: 1.25rem;
+    } */
+    .title-discovery{
+        margin-block: 3rem;
+    }
+    .discovery-section-title{
         font-size: 1.25rem;
     }
-    .primary-navigation a:hover{
-        color: var(--primary-color);
+    .sedan-img, .suv-img, .electric-img{
+        width: 21rem;
+        height: 10rem;
+        margin-block: 1.25rem;
+        margin-block-end: 0.75rem
     }
-   .mobile-nav-toggle{
-    display: block;
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
-    border: none;
-    /* background-color: #1a5eac; */
-    /* background-image: url(/SVGicone/close_32px.png); */
-    background-repeat: no-repeat;
-    right: 1rem;
-    top: 1rem;
-    z-index: 1000;
-   }
-   .primary-navigation[data-visible="true"]{
-    transform: translateX(0%);
- }
- .primary-navigation ul{
-    margin: 0;
- }
- ul{
-    margin-block: 0;
+    .discovery-items-content a{
+        font-size: calc(0.75rem + 3px);
+        padding-bottom: 0.25rem;
+        color: var(--primary-color);
+        border-bottom: 1px var(--primary-color) solid;
+    }
+    /* /////////// */
+    .card{
+        border: 1px var(--Text-Color) solid;
+        width: 18rem;
+    }
+    .card img{
+        width: 15rem;
+        margin-left: 7%;
+    }
+    .price-details{
+        padding: 0.75rem;
+        margin-top: 5px;
+    }
+    /* //////////// */ 
+    
+}
+@media (max-width: 460px){
+    /* header{
+        border-bottom: none;
+    } */
+    .primary-navigation a{
+        color: white;
+        font-size: 1.25rem;
+        
+    }
+    .primary-navigation{
+        position: fixed;
+        inset: 0 0 0 30%;
+        background-color: hsla(0, 0%, 0%, 0.400);
+        backdrop-filter: blur(2rem);
+        flex-direction: column;
+        padding: min(25vh, 8rem) 2rem;
+        gap: 2.75rem;
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+        
+    }
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        /* width: 2rem;
+    aspect-ratio: 1; */
+        right: -1rem;
+        top: -1rem;
+        z-index: 1000;
+       }
+       .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+     }
 }
 
-}
+
