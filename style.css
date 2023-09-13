@@ -79,6 +79,23 @@
   }
 }
 
+@media (max-width:440px ){
+  .carousel-inner h1{
+    font-size: 1.75rem;
+  }
+  .carousel-inner p{
+    font-size: 14px;
+  }
+  .btn-container{
+    bottom: 37%;
+  }
+}
+
+@media (max-width: 380px){
+  .btn-container{
+    bottom: 39%;
+  }
+}
 
  /* @media (max-width: 1983px){
   .btn-container{

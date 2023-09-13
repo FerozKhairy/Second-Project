@@ -60,11 +60,11 @@ header a{
 /* .signIn-btn a:hover{
     background-color: #1a5eac;
 } */
-header ul a:hover{
+/* header ul a:hover{
    background-color: #e4e4e4;
    padding: 20px 18px;
-   /* border-bottom: 1px #bdbdbd solid; */
-}
+   border-bottom: 1px #bdbdbd solid;
+} */
 nav{
     position: relative;
 }
@@ -191,10 +191,32 @@ text-align: center;
     .card{
         border: 1px black solid;
         width: 20rem;
+        /* height: 22rem; */
     }
     .card img{
         width: 16rem;
         margin-left: 10%;
+    }
+    .amg-pic-size img{
+        width: 14rem;
+    }
+    .camero-pic-size img{
+        width: 13rem;
+       
+        margin-left: 15%;
+    }
+    .dodge-pic-size img{
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem; 
+        width: 17rem;
+    }
+    .bently-pic-size img{
+        width: 17rem;
+         margin-top: 0.25rem;
+        margin-bottom: 0.25rem; 
+    }
+    .bmw-pic-size img{
+        width: 15rem;
     }
     .type-milage{
         display: flex;
@@ -423,14 +445,15 @@ text-align: center;
         border-bottom: none;
     } */
     .primary-navigation a{
-        color: white;
+        color: #333;
         font-size: 1.25rem;
         
     }
     .primary-navigation{
         position: fixed;
         inset: 0 0 0 30%;
-        background-color: hsla(0, 0%, 0%, 0.400);
+        /* background-color: hsla(0, 0%, 0%, 0.400); */
+        background-color: #e4e4e4;
         backdrop-filter: blur(2rem);
         flex-direction: column;
         padding: min(25vh, 8rem) 2rem;
