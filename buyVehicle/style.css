@@ -29,6 +29,9 @@ body{
 }
 
 /* ////////////////// MENU ////////////// */
+.logo i{
+  font-size: 2.50rem;
+}
 header{
     position: fixed;
     display: flex;
@@ -115,7 +118,7 @@ header.stiky{
     z-index: 10000;
     width: 1.25rem;
     aspect-ratio: 1;
-    background-image: url(../icone/close_FILL0_wght400_GRAD0_opsz48.png);
+    background-image: url(../icone/menu.png);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -154,6 +157,10 @@ text-align: center;
     color: var(--Secondary-Color);
     padding-block: 10px;
     border-bottom: 1px var(--Secondary-Color) solid;
+}
+.discovery-items-content a:hover{
+    color: #ce8104;
+    border-bottom: 1px #ce8104 solid;
 }
 .sedan-img, .suv-img, .electric-img{
     background-position: center;
@@ -252,45 +259,123 @@ text-align: center;
     }
  
 /* //////////// END CARDS SECTION /////////// */
+
+/* ////////////////// Footer /////////////////// */
+
 .footer{
-    margin-top: 1rem;
-    position: relative;
-    width: 100%;
-    height: 30rem;
-    background-color: #dfdfdf;
+    background-color: #e4e4e4;
+    height: 65vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 5rem;
 }
-form{
+/* ///////////////////// CONTACT TEXT SECTION ////////////// */
+.footer .contact{
+    width: 40%;
+    /* margin-left: 5%; */
+    /* border: 1px #07930c solid ; */
+}
+.contact h1{
+    color: var(--Secondary-Color);
+    font-size: 3rem;
+}
+.contact .text{
+    padding: 0.75rem 0 1.75rem 0;
+}
+.footer .social-media{
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    border: 1px blue solid;
+    margin-top: 2rem;
 }
-.text-box{
-    box-shadow: 0px 0px 0px 2px #2499FF;
-    background-color: rgba(247, 247, 247, 0.8);
-    /* transition: 0.1s ease-in-out; */
-    border-radius: 25px;
-    padding: 15px 5rem;
-    /* height: ;
-    width: ; */
-    font-size: 15px;
-    outline: none;
-    border: none;
-    margin: 1rem;
+.social-media i{
+    font-size: 1rem;
+}
+.social-media ul li{
+ list-style: none;
 
 }
-textarea{
-    box-shadow: 0px 0px 0px 2px #2499FF;
-    background-color: rgba(247, 247, 247, 0.8);
-    font-size: 15px;
-    outline: none;
-    border: none;
-    padding: 10px;
-    
+.social-media ul li i{
+    margin-right: 10px;
+    font-size: 1.50rem;
 }
+.social-media ul li p{
+    padding-bottom: 3px; 
+    font-size: 1.25rem;
+}
+.facebook-color i{
+    color: #1F7AE0;
+}
+.facebook-color i:hover{
+    color: #0157b9;
+}
+.instagram-color i{
+    color: #DD217B;
+}
+.instagram-color i:hover{
+    color: #a40351;
+}
+.whatsapp-color i{
+    color: #25D366;
+}
+.whatsapp-color i:hover{
+    color: #04973a;
+}
+/* //////////////// FORM TEXT ENTRY SECTION ///////////////// */
+.footer .contact-email{
+    width: 40%;
+    height: auto;
+    /* margin-right: 5%; */
+    /* border: 1px #1F7AE0 solid; */
+}
+.footer form{
+    display: flex;
+    flex-direction: column; 
+}
+
+/* ////////////////// INPUTS /////////// */
+.contact-email input[type="text"]{
+ padding: 10px;
+ margin: 5px;
+ border: none;
+ border-radius: 10px;
+ width: 80%;
+ height: 3rem;
+}
+.contact-email input[type="text"]:focus{
+    outline: none;
+    background-color: #ececec;
+}
+.contact-email input[type="submit"]{
+    width: 80%;
+    height: 3rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 0 0 5px ;
+    background-color: var(--Accent-dark-Color);
+    color: white;
+    font-size: 1.25rem; 
+}
+.contact-email input[type="submit"]:hover{
+    background-color: var(--Accent-Color);
+}
+/* .contact-email input[type="submit"]:focus{
+    background-color: var(--Accent-dark-Color);
+} */
+.contact-email textarea{
+    width: 80%;
+    height: 6rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    resize: none;
+}
+.contact-email textarea:focus{
+    outline: none;
+    background-color: #ececec;
+}
+/* ////////////////////// Footer End ///////////////////// */
 .buton {
     /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
     background-color: var(--primary-color);
@@ -417,7 +502,50 @@ textarea{
      text-align: center;
      /* background-color: #07930c; */
    }
+   .contact-email input[type="text"]{
+    padding: 10px;
+    width: 90%;
+    height: 2.25rem;
+   }
+   .contact-email textarea{
+    width: 90%;
+    height: 4.25rem;
+}
+.contact-email input[type="submit"]{
+    width: 90%;
+    height: 2.25rem;
+    font-size: 1rem; 
+}
+.social-media ul li i{
+    margin-right: 10px;
+    font-size: 1.25rem;
+}
+.social-media ul li p{
+    padding-bottom: 3px; 
+    font-size: 1rem;
+}
 
+.contact h1{
+    color: var(--Secondary-Color);
+    font-size: 2rem;
+}
+
+}
+@media(max-width: 650px){
+   .footer{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 3rem;
+}
+
+.footer .social-media{
+    margin-top: .75rem;
+
+}
+.contact{
+    width: 100%;
+}
 }
 
 /* /////////// CARDS MEDIA QUERY ////////// */
@@ -449,6 +577,9 @@ textarea{
         width: 25rem;
         height: 12rem;
     }
+    .logo i{
+        font-size: 2rem;
+      }
    
 }
 
@@ -506,6 +637,9 @@ textarea{
         padding: 0.75rem;
         margin-top: 5px;
     }
+    .logo i{
+        font-size: 1.75rem;
+      }
     /* //////////// */ 
     
 }
@@ -543,6 +677,6 @@ textarea{
        .primary-navigation[data-visible="true"]{
         transform: translateX(0%);
      }
+     
 }
-
 
